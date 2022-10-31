@@ -1,5 +1,5 @@
 
-  Recap 3.32
+  Recap 3.32 (with modified UI style)
 
 This AddOn will track and summarize the damage dealt and received by every participant in a fight around the user.
 
