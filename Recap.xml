@@ -74,7 +74,7 @@
 	</Button>		
 
 	<Button name = "RecapHeaderTemplate" virtual="true">
-		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD">
+		<HighlightTexture file="Interface\AddOns\Recap\Status-Idle" alphaMode="ADD">
 			<Anchors>
 				<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT"/>
 				<Anchor point="BOTTOMRIGHT" relativeTo="$parent" relativePoint="BOTTOMRIGHT">
@@ -494,7 +494,7 @@
 	</Button>
 
 	<Button name="RecapListTemplate" inherits="RecapTotalsTemplate" virtual="true">
-		<HighlightTexture file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD"/>
+		<HighlightTexture file="Interface\AddOns\Recap\Status-Idle" alphaMode="ADD"/>
 		<Scripts>
 			<OnLoad>
 				this:RegisterForClicks("LeftButtonUp", "RightButtonUp")
@@ -515,9 +515,9 @@
 		<Anchors>
 			<Anchor point="CENTER"/>
 		</Anchors>
-		<Backdrop name="RecapBackDrop" bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border">
+		<Backdrop name="RecapBackDrop" bgFile="Interface\DialogFrame\UI-DialogBox-Background">
 			<BackgroundInsets>
-				<AbsInset left="4" right="4" top="4" bottom="4" />
+				<AbsInset left="5" right="5" top="6" bottom="4" />
 			</BackgroundInsets>
 			<TileSize>
 				<AbsValue val="16" />
@@ -529,28 +529,28 @@
 		<Layers>
 			<Layer level = "ARTWORK">
 
-				<Texture name="RecapTopBar" file="Interface\TradeSkillFrame\UI-TradeSkill-SkillBorder">
+				<Texture name="RecapTopBar" file="Interface\AddOns\Recap\Status-Idle">
 					<Size>
-						<AbsDimension x="128" y="8"/>
+						<AbsDimension x="128" y="2"/>
 					</Size>
 					<Anchors>
 						<Anchor point="TOPLEFT">
 							<Offset>
-								<AbsDimension x="4" y="-20"/>
+								<AbsDimension x="4" y="-25"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
 					<TexCoords left="0.1" right="1.0" top="0" bottom="0.25"/>
 				</Texture>
 
-				<Texture name="RecapBottomBar" file="Interface\TradeSkillFrame\UI-TradeSkill-SkillBorder">
+				<Texture name="RecapBottomBar" file="Interface\AddOns\Recap\Status-Idle">
 					<Size>
-						<AbsDimension x="128" y="8"/>
+						<AbsDimension x="128" y="2"/>
 					</Size>
 					<Anchors>
 						<Anchor point="BOTTOMLEFT">
 							<Offset>
-								<AbsDimension x="8" y="24"/>
+								<AbsDimension x="8" y="28"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -935,10 +935,7 @@
 				<NormalText inherits="GameFontNormalSmall"/>
 				<DisabledText inherits="GameFontHighlightSmall"/>
 				<HighlightText inherits="GameFontHighlightSmall"/>
-				<NormalTexture inherits="UIPanelButtonUpTexture"/>
-				<PushedTexture inherits="UIPanelButtonDownTexture"/>
-				<DisabledTexture inherits="UIPanelButtonDisabledTexture"/>
-				<HighlightTexture inherits="UIPanelButtonHighlightTexture"/>
+				<HighlightTexture file="Interface\AddOns\Recap\Status-Idle" alphamode="ADD"/>
 			</Button>
 
 			<Button name = "RecapSelf1" inherits="RecapEffectsTemplate" id="1">

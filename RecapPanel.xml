@@ -189,9 +189,9 @@
 		<Anchors>
 			<Anchor point="CENTER"/>
 		</Anchors>
-		<Backdrop name="RecapPanelbackdrop" bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+		<Backdrop name="RecapPanelbackdrop" bgFile="Interface\DialogFrame\UI-DialogBox-Background" tile="true">
 			<BackgroundInsets>
-				<AbsInset left="4" right="4" top="4" bottom="4" />
+				<AbsInset left="4" right="6" top="5" bottom="6" />
 			</BackgroundInsets>
 			<TileSize>
 				<AbsValue val="16" />
@@ -210,7 +210,7 @@
 					<Anchors>
 						<Anchor point="TOPLEFT">
 							<Offset>
-								<AbsDimension x="7" y="-7"/>
+								<AbsDimension x="7" y="-10"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -220,7 +220,7 @@
 			<Layer level="ARTWORK">
 				<Texture name="RecapPanelFaction">
 					<Size>
-						<AbsDimension x="18" y="18"/>
+						<AbsDimension x="0.16" y="0.16"/>
 					</Size>
 					<Anchors>
 						<Anchor point="TOPLEFT">
@@ -233,7 +233,7 @@
 				</Texture>
 				<Texture name="RecapPanelClass" file="Interface\AddOns\Recap\Recap-Classes">
 					<Size>
-						<AbsDimension x="16" y="16"/>
+						<AbsDimension x="0.16" y="0.16"/>
 					</Size>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativeTo="RecapPanelFaction" relativePoint="TOPRIGHT">
@@ -251,19 +251,19 @@
 					<Anchors>
 						<Anchor point="TOPLEFT" relativeTo="RecapPanelClass" relativePoint="TOPRIGHT">
 							<Offset>
-								<AbsDimension x="3" y="-1"/>
+								<AbsDimension x="16" y="-1"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
 				</FontString>
-				<Texture name="RecapPanelTopBar" file="Interface\TradeSkillFrame\UI-TradeSkill-SkillBorder">
+				<Texture name="RecapPanelTopBar" file="Interface\AddOns\Recap\Status-Idle">
 					<Size>
-						<AbsDimension x="267" y="8"/>
+						<AbsDimension x="265" y="2"/>
 					</Size>
 					<Anchors>
 						<Anchor point="TOPLEFT">
 							<Offset>
-								<AbsDimension x="4" y="-22"/>
+								<AbsDimension x="4" y="-28"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
@@ -300,12 +300,12 @@
 
 			<Button name="RecapPanelTab1" inherits="RecapPanelTabTemplate" id="1">
 				<Size>
-					<AbsDimension x="20" y="20"/>
+					<AbsDimension x="16" y="16"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPRIGHT" relativeTo="RecapPanelCloseButton" relativePoint="TOPLEFT">
 						<Offset>
-							<AbsDimension x="-2" y="2"/>
+							<AbsDimension x="-2" y="-1"/>
 						</Offset>
 					</Anchor>
 				</Anchors>
@@ -314,7 +314,7 @@
 			</Button>
 			<Button name="RecapPanelTab2" inherits="RecapPanelTabTemplate" id="2">
 				<Size>
-					<AbsDimension x="20" y="20"/>
+					<AbsDimension x="16" y="16"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPRIGHT" relativeTo="RecapPanelTab1" relativePoint="TOPLEFT">
@@ -328,7 +328,7 @@
 			</Button>
 			<Button name="RecapPanelTab3" inherits="RecapPanelTabTemplate" id="3">
 				<Size>
-					<AbsDimension x="20" y="20"/>
+					<AbsDimension x="16" y="16"/>
 				</Size>
 				<Anchors>
 					<Anchor point="TOPRIGHT" relativeTo="RecapPanelTab2" relativePoint="TOPLEFT">
@@ -350,9 +350,9 @@
 				</Anchors>
 				<Layers>
 					<Layer level="ARTWORK">
-						<Texture name="RecapPanelBottomBar" file="Interface\TradeSkillFrame\UI-TradeSkill-SkillBorder">
+						<Texture name="RecapPanelBottomBar" file="Interface\AddOns\Recap\Status-Idle">
 							<Size>
-								<AbsDimension x="267" y="8"/>
+								<AbsDimension x="265" y="2"/>
 							</Size>
 							<Anchors>
 								<Anchor point="TOPLEFT">
@@ -650,9 +650,9 @@
 								</Anchor>
 							</Anchors>
 						</FontString>
-						<Texture name="RecapPanelOutgoingBottomBar" file="Interface\TradeSkillFrame\UI-TradeSkill-SkillBorder">
+						<Texture name="RecapPanelOutgoingBottomBar" file="Interface\AddOns\Recap\Status-Idle">
 							<Size>
-								<AbsDimension x="267" y="8"/>
+								<AbsDimension x="265" y="2"/>
 							</Size>
 							<Anchors>
 								<Anchor point="TOPLEFT">
